@@ -18,9 +18,9 @@ def dataVis(State,County):
     makeData(df,"workplaces_percent_change_from_baseline","WorkPlace",County)#make Workplace data
 
 def makeData(df,category,x_title,County):
-    y_values = df.loc[:, category]#get x values
+    y_values = df.loc[:, category]#get y values
     y_values = df.loc[:, category]
-    x_values = np.linspace(0,1,len(df.loc[:, category]))#get y values
+    x_values = np.linspace(0,1,len(df.loc[:, category]))#get x values
 
     #Line of best fit algorithm
     poly_degree = 9
